@@ -1,0 +1,15 @@
+#!/bin/bash
+#sudo apt-get -y install apache2
+#sudo apt-get -y install php5
+#sudo apt-get -y install libapache2-mod-php5
+
+#sudo /etc/init.d/apache2 restart
+ #// 重启apache，此时php5已经可用了
+
+#接下来，我们安装mysql：
+
+sudo apt-get -y install mysql-server
+sudo apt-get -y install libapache2-mod-auth-mysql
+sudo apt-get -y install php5-mysql
+sudo /etc/init.d/apache2 restart
+# // 再次重启apache，使新服务正常激活
